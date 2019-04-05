@@ -7,5 +7,45 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "asti-ui": {
+      "tags": ["type:app", "domain:app"]
+    },
+    "asti-ui-e2e": {
+      "tags": ["type:e2e"]
+    },
+    "payment-feature-create-payment": {
+      "tags": ["type:feature", "domain:payment"]
+    },
+    "payment-feature-search-payment": {
+      "tags": ["type:feature", "domain:payment"]
+    },
+    "message-feature-search-message": {
+      "tags": ["type:feature", "domain:message"]
+    },
+    "payment-data-payment": {
+      "tags": ["type:data", "domain:payment"]
+    },
+    "message-data-message": {
+      "tags": ["type:data", "domain:message"]
+    },
+    "message-shared-message": {
+      "tags": ["type:shared", "domain:message"]
+    },
+    "payment-shared-payment": {
+      "tags": ["type:shared", "domain:payment"]
+    },
+    "shared-ui-common": {
+      "tags": ["type:ui", "domain:shared"]
+    },
+    "shared-ui-technical-protocol": {
+      "tags": ["type:ui", "domain:shared"]
+    },
+    "shared-ui-outbound-messages": {
+      "tags": ["type:ui", "domain:shared"]
+    },
+    "message-api-message": {
+      "tags": ["type:api", "domain:api"]
+    }
+  }
 }

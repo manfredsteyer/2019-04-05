@@ -95,7 +95,18 @@
       {
         "allow": [],
         "depConstraints": [
-          { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
+          { "sourceTag": "type:app", "onlyDependOnLibsWithTags": ["type:feature"] },
+          { "sourceTag": "type:feature", "onlyDependOnLibsWithTags": ["type:ui", "type:data", "type:shared", "type:api"] },
+          { "sourceTag": "type:api", "onlyDependOnLibsWithTags": ["type:ui", "type:data", "type:shared"] },
+
+          { "sourceTag": "type:ui", "onlyDependOnLibsWithTags": ["type:shared"] },
+          { "sourceTag": "type:data", "onlyDependOnLibsWithTags": ["type:shared"] },
+          { "sourceTag": "type:shared", "onlyDependOnLibsWithTags": [] },
+          { "sourceTag": "type:e2e", "onlyDependOnLibsWithTags": ["*"] },
+
+          { "sourceTag": "domain:payment", "onlyDependOnLibsWithTags": ["domain:payment", "domain:shared", "domain:api"] },
+          { "sourceTag": "domain:message", "onlyDependOnLibsWithTags": ["domain:message", "domain:shared", "domain:api"] }
+
         ]
       }
     ]
