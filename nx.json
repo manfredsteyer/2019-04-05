@@ -46,6 +46,12 @@
     },
     "message-api-message": {
       "tags": ["type:api", "domain:api"]
+    },
+    "masterdata-bic-feature-search-bic": {
+      "tags": []
+    },
+    "masterdata-bic-data-bic": {
+      "tags": []
     }
   }
 }

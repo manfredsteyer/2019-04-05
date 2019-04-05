@@ -39,7 +39,13 @@
       "@asti/shared/ui-outbound-messages": [
         "libs/shared/ui-outbound-messages/src/index.ts"
       ],
-      "@asti/message/api-message": ["libs/message/api-message/src/index.ts"]
+      "@asti/message/api-message": ["libs/message/api-message/src/index.ts"],
+      "@asti/masterdata/bic/feature-search-bic": [
+        "libs/masterdata/bic/feature-search-bic/src/index.ts"
+      ],
+      "@asti/masterdata/bic/data-bic": [
+        "libs/masterdata/bic/data-bic/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

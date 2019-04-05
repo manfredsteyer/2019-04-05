@@ -419,6 +419,60 @@
         }
       },
       "schematics": {}
+    },
+    "masterdata-bic-feature-search-bic": {
+      "root": "libs/masterdata/bic/feature-search-bic",
+      "sourceRoot": "libs/masterdata/bic/feature-search-bic/src",
+      "projectType": "library",
+      "prefix": "asti",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/masterdata/bic/feature-search-bic/tsconfig.lib.json",
+              "libs/masterdata/bic/feature-search-bic/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/masterdata/bic/feature-search-bic/src/test.ts",
+            "tsConfig": "libs/masterdata/bic/feature-search-bic/tsconfig.spec.json",
+            "karmaConfig": "libs/masterdata/bic/feature-search-bic/karma.conf.js"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "masterdata-bic-data-bic": {
+      "root": "libs/masterdata/bic/data-bic",
+      "sourceRoot": "libs/masterdata/bic/data-bic/src",
+      "projectType": "library",
+      "prefix": "asti",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/masterdata/bic/data-bic/tsconfig.lib.json",
+              "libs/masterdata/bic/data-bic/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/masterdata/bic/data-bic/src/test.ts",
+            "tsConfig": "libs/masterdata/bic/data-bic/tsconfig.spec.json",
+            "karmaConfig": "libs/masterdata/bic/data-bic/karma.conf.js"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
