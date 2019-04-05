@@ -45,6 +45,9 @@
       ],
       "@asti/masterdata/bic/data-bic": [
         "libs/masterdata/bic/data-bic/src/index.ts"
+      ],
+      "@asti/shared/shared-security": [
+        "libs/shared/shared-security/src/index.ts"
       ]
     }
   },
